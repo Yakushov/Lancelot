@@ -1,41 +1,84 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    width: 100%;
+    height: 100%;
 }
 .clearfix {
     overflow: auto;
 }
 .container {
     display: block;
-    width: 1024px;
+    width: 1270px;
     margin: 0 auto;
-.header {
-    heught: 60px;
+    background-size: cover;
+    background: url('../img/BackFon.jpg')no-repeat center bottom;
 }
+nav {
+    display: block;
+    padding: 25px 0;
+    margin: 0;
+
+    z-index: 1030;
 }
-.header-logo{
+.header-logo {
     display: block;
     float: left;
+    margin: 0 50px;
 }
-
 ul.header-nav {
     float: right;
     padding: 0;
-    margin: 0;
+    margin: 0 50px;
     list-style-type: none;
 }
 ul.header-nav > li {
     display: inline-block;
 }
-ul.header-nav >li > a {
+ul.header-nav > li > a {
     display: inline-block;
-    padding: 20px 10px;
+    padding: 18px 10px;
     color: #8f969d;
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
 }
-
-ul.header-nav >li > a:hover {
+ul.header-nav > li > a:hover{
     background-color: red;
+}
+.top-banner {
+    float: none;
+    display: block;
+    padding-top: 190px;
+    margin: 0;
+    text-align: center;
+}
+h2 {
+    display: block;
+    font:  600 79px/1 "Poppins",sans-serif;
+    margin: 0 0 20px;
+    padding: 0;
+    color: #696969;
+}
+p {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto 40px;
+    padding: 0;
+    font: 300 27px/41px "Poppins",sans-serif;
+    color: #A9A9A9;
+}
+.paypal-button {
+    display: inline-block;
+    padding: 0 80px;
+    margin: 0 0 80px 0;
+    text-decoration: none;
+    font: 300 27px/41px "Poppins",sans-serif;
+    background-color: dodgerblue;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+a:focus, a:hover{
+    background: #000080;
 }
