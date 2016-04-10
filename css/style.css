@@ -47,35 +47,35 @@ body {
 
 ul.header-nav {
     float: right;
-    padding: 0;
+    padding: 3px 0;
     margin: 0;
     list-style-type: none;
 }
-
 ul.header-nav > li {
     display: inline-block;
 }
-
 ul.header-nav > li > a {
-    display: inline-block;
-    padding: 19px 10px;
     color: #8f969d;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
+    display: inline-block;
+    padding: 19px 10px;
 }
-
-ul.header-nav > li > a:hover {
+ul.header-nav > li > a:hover{
     color: black;
 }
 
-.header-nav > li.header-nav-cta > a {
-    background-color: #2fca2d;
-    border-radius: 20px;
-    padding: 11px 30px;
+ul.header-nav > li.header-nav-cta > a {
+    background-color: #ff6622;
+    border: none;
+    border-radius: 30px;
+    padding: 11px 35px;
     color: #fff;
 }
-
+ul.header-nav > li.header-nav-cta > a:hover {
+    background-color: black;
+}
 .header-product {
     position: relative;
     background: url(../img/BackFon.jpg) center no-repeat;
@@ -173,7 +173,7 @@ ul.header-nav > li > a:hover {
     position: relative;
     width: 347px;
     height: 499px;
-    margin: 0 auto;
+    margin: 100px auto;
 
     background: url("../img/apple-watch-2.png");
     background-position: center;
@@ -228,6 +228,7 @@ ul.header-nav > li > a:hover {
 }
 
 .hiw-section {
+    background-color: #f8fbfd;
 }
 
 .hiw-steps {
@@ -249,7 +250,6 @@ ul.header-nav > li > a:hover {
 
 .hiw-steps > .hiw-step > .hiw-step-image {
     display: block;
-
     width: 100px;
     height: 100px;
     margin: 0 auto;
@@ -279,13 +279,215 @@ ul.header-nav > li > a:hover {
     transform: rotate(45deg);
 }
 
-/*.hiw-steps > .hiw-step > .hiw-step-arrow::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #737c85;
-    transform: rotate(45deg);
+@font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/font/Flaticon.eot");
+    src: url("../fonts/font/Flaticon.eot#iefix") format("embedded-opentype"),
+    url("../fonts/font/Flaticon.woff") format("woff"),
+    url("../fonts/font/Flaticon.ttf") format("truetype"),
+    url("../fonts/font/Flaticon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
-.hiw-steps > .hiw-step > .hiw-step-arrow::after {}
+.flaticons {
+    font-family: "Flaticon", sans-serif;
+    display: inline-block;
+    font-style: normal;
+    font-size: 35px;
+    color: #0f33ff;
+    position: absolute;
+    top: 30px;
+    left: 3px;
+}
+.icon-loc:before {
+    content: "\f113";
+}
+.icon-heart:before {
+    content: "\f110";
+}
+.icon-sec:before {
+    content: "\f114";
+}
+.icon-idea:before {
+    content: "\f122";
+}
+.icon-save:before {
+    content: "\f100";
+}
+.icon-tec:before {
+    content: "\f104";
+}
+.icon-key:before {
+    content: "\f121";
+    top: -28px;
+    left: -7px;
+    position: absolute;
+    font-size: 30px;
+}
+.icon-voice:before {
+    content: "\f101";
+    top: -28px;
+    left: -7px;
+    position: absolute;
+    font-size: 30px;
+}
+.icon-apps:before {
+    content: "\f108";
+    top: -28px;
+    left: -7px;
+    position: absolute;
+    font-size: 30px;
+}
+.icon-stay:before {
+    content: "\f112";
+    top: -28px;
+    left: -7px;
+    position: absolute;
+    font-size: 30px;
+}
+.icon-des:before {
+    content: "\f12a";
+    top: -28px;
+    left: -7px;
+    position: absolute;
+    font-size: 30px;
+}
+.icon-time:before {
+    content: "\f12e";
+    top: -28px;
+    left: -7px;
+    position: absolute;
+    font-size: 30px;
+}
+
+.tb-section {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 100px;
+    text-align: left;
+}
+
+
+.tb-steps {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.tb-steps > .tb-step {
+    float: left;
+    width: 33.333333%;
+    padding: 5px;
+    position: relative;
+}
+
+.tb-steps > .tb-step > .tb-step-title {
+    color: #374048;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+.tb-steps > .tb-step > .tb-step-description {
+    color: #82898f;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 50px;
+}
+.watch {
+    background-color: #f8fbfd;
+}
+.row {
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+.column {
+    display: block;
+    width: 33.333333%;
+    padding: 5px;
+    position: relative;
+    float: left;
+}
+.column > .columnsteps {
+    positon: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.column > .columnsteps > .columnstep {
+    position: relative;
+}
+.column > .columnsteps > .columnstep > .column-title {
+    color: #374048;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 45px;
+}
+.column > .columnsteps > .columnstep > .column-description {
+    color: #82898f;
+    font-size: 14px;
+    line-height: 26px;
+    padding-left: 45px;
+}
+.column > .column-image {
+    padding-left: 17px;
+}
+
+.collection {}
+.collection-steps {
+    position: relative;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.collection-steps > .collection-step {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+.collection-steps > .collection-step > .collection-img {
+    display: block;
+    width: 230px;
+    height: 230px;
+    vertical-align: middle;
+    text-align: center;
+}
+.collection-steps > .collection-step > .collection-title {
+    color: #0084ff;
+    font-size: 16px;
+    margin: 5px auto 0 auto;
+}
+.collection-steps > .collection-step > .collection-description {
+    color: #b4bcc3;
+    font-size: 13px;
+    margin: 2px auto;
+}
+.collection-steps > .collection-step > .collection-price {
+    color: #ff6622;
+    font-size: 19px;
+    padding: 10px auto;
+}
+.collection-steps > .collection-step > .collection-button {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 5px 20px;
+    border: 1px solid gray;
+    color: #969da3;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.collection-steps > .collection-step > .collection-button:hover {
+    background-color: #374048;
+    color: #fff;
+}
+
